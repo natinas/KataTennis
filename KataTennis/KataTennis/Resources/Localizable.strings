@@ -1,0 +1,11 @@
+//MARK: - Home
+"home_title_label" = "Kata Tennis";
+"home_launch_game_button" = "Launch Game";
+
+//MARK: - Game
+"game_player1_label" = "player 1";
+"game_player2_label" = "player 2";
+"game_point_label" = "Points :";
+"game_score_label" = "Score :";
+"game_player1_win_label" = "Player 1 Win";
+"game_player2_win_label" = "Player 2 Win";

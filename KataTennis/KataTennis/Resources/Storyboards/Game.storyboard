@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jI-k3-Swc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="w3o-HZ-PRS">
+            <objects>
+                <viewController id="1jI-k3-Swc" customClass="KTGameViewController" customModule="KataTennis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bIm-pa-Qz0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Sr-9e-rzF">
+                                <rect key="frame" x="94" y="177" width="187.5" height="333.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8w5-cY-Kgf">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="111"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbv-38-1Md">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="111"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3uj-oY-eLC">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textStringKey" value="game_player1_label"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sYZ-es-8PD">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textStringKey" value="game_player2_label"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wQy-ko-7QT">
+                                        <rect key="frame" x="0.0" y="111" width="187.5" height="111"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vd2-Wu-gd3">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textStringKey" value="game_point_label"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nY2-Dg-KKL">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="T0o-K5-e9N">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="111"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dG9-75-D3f">
+                                        <rect key="frame" x="0.0" y="222" width="187.5" height="111.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CC1-u5-4IC">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textStringKey" value="game_score_label"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-oE-kaB">
+                                                <rect key="frame" x="62.5" y="0.0" width="62.5" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0rr-4I-eF2">
+                                                <rect key="frame" x="125" y="0.0" width="62.5" height="111.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypY-0Y-hQi">
+                                <rect key="frame" x="311" y="40" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ypY-0Y-hQi" secondAttribute="height" multiplier="1:1" id="Le5-6e-5wC"/>
+                                    <constraint firstAttribute="height" constant="44" id="Ug2-rQ-rRU"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="Ic6-gZ-vgp" kind="show" id="Fbv-sM-Nct"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.03010931239" green="0.056828714910000001" blue="0.13569307329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Sr-9e-rzF" firstAttribute="width" secondItem="bIm-pa-Qz0" secondAttribute="width" multiplier="0.5" id="8lk-Jb-Qon"/>
+                            <constraint firstItem="QmF-uk-R2Z" firstAttribute="trailing" secondItem="ypY-0Y-hQi" secondAttribute="trailing" constant="20" id="F5K-mG-rfm"/>
+                            <constraint firstItem="6Sr-9e-rzF" firstAttribute="height" secondItem="bIm-pa-Qz0" secondAttribute="height" multiplier="0.5" id="RVR-Cp-Cd9"/>
+                            <constraint firstItem="6Sr-9e-rzF" firstAttribute="centerX" secondItem="QmF-uk-R2Z" secondAttribute="centerX" id="UR7-P7-Mcx"/>
+                            <constraint firstItem="ypY-0Y-hQi" firstAttribute="top" secondItem="QmF-uk-R2Z" secondAttribute="top" constant="20" id="e4u-rV-k4n"/>
+                            <constraint firstItem="6Sr-9e-rzF" firstAttribute="centerY" secondItem="QmF-uk-R2Z" secondAttribute="centerY" id="eGD-BB-2Ub"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QmF-uk-R2Z"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="congratulationSegue" value="congratulationSegue"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="_pointPlayer1Label" destination="nY2-Dg-KKL" id="Xwu-V0-xYu"/>
+                        <outlet property="_pointPlayer2Label" destination="T0o-K5-e9N" id="mNW-sQ-NiE"/>
+                        <outlet property="_scorePlayer1Label" destination="Fu4-oE-kaB" id="49w-sd-eJw"/>
+                        <outlet property="_scorePlayer2Label" destination="0rr-4I-eF2" id="EVI-fl-fH5"/>
+                        <segue destination="G2U-P7-ukN" kind="show" identifier="congratulationSegue" id="uKS-nF-uGs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujB-wK-6KX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="83"/>
+        </scene>
+        <!--Congratulation-->
+        <scene sceneID="8Um-RF-97z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Congratulation" id="G2U-P7-ukN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A02-SM-0SK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="58"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="fYm-J8-cYj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="Ic6-gZ-vgp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXP-XM-gIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="375" height="375"/>
+    </resources>
+</document>

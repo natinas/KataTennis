@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sC9-hz-hmi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="0Ve-RG-Trn">
+            <objects>
+                <viewController id="sC9-hz-hmi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Neo-f0-Tyn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4w7-HK-TXW">
+                                <rect key="frame" x="20" y="257.5" width="335" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textStringKey" value="home_title_label"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRv-74-QpZ">
+                                <rect key="frame" x="20" y="321.5" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Qd-sN-zZT"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textStringKey" value="home_launch_game_button"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoShrink" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xRL-xA-1iA" kind="show" id="fS2-WW-YC5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031372549019607843" green="0.054901960784313725" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RMB-TA-Dlu" firstAttribute="trailing" secondItem="4w7-HK-TXW" secondAttribute="trailing" constant="20" id="E2d-Qf-W7T"/>
+                            <constraint firstItem="HRv-74-QpZ" firstAttribute="top" secondItem="4w7-HK-TXW" secondAttribute="bottom" constant="20" id="SkS-8L-kyr"/>
+                            <constraint firstItem="4w7-HK-TXW" firstAttribute="leading" secondItem="RMB-TA-Dlu" secondAttribute="leading" constant="20" id="kOR-sW-aZw"/>
+                            <constraint firstItem="HRv-74-QpZ" firstAttribute="trailing" secondItem="4w7-HK-TXW" secondAttribute="trailing" id="niD-ug-lON"/>
+                            <constraint firstItem="HRv-74-QpZ" firstAttribute="centerX" secondItem="RMB-TA-Dlu" secondAttribute="centerX" id="qCz-6g-vKE"/>
+                            <constraint firstItem="HRv-74-QpZ" firstAttribute="leading" secondItem="4w7-HK-TXW" secondAttribute="leading" id="qb9-lD-9Fr"/>
+                            <constraint firstItem="HRv-74-QpZ" firstAttribute="centerY" secondItem="RMB-TA-Dlu" secondAttribute="centerY" id="ub5-zu-V1Y"/>
+                            <constraint firstItem="4w7-HK-TXW" firstAttribute="height" secondItem="HRv-74-QpZ" secondAttribute="height" id="utg-MJ-H9h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RMB-TA-Dlu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OY0-Iw-npf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="140"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="t0g-Dd-8wX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Game" id="xRL-xA-1iA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96N-Ly-lMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="139"/>
+        </scene>
+    </scenes>
+</document>
